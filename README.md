@@ -1,4 +1,3 @@
 #SimpleCalculatorWebsite
-A website for simple arithmetic calculations that stores calculations in the local browser.
-
-Tools used: JavaScript, Bootstrap, HTML, CSS
+For simple arithmetic calculations that are stored in local browser
+Tools Used: JavaScript, Bootstrap, CSS, HTML
