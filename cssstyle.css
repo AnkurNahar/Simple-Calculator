@@ -1,0 +1,71 @@
+body{padding-bottom: 50px;}
+.tbl{ border: 3px solid black;
+       margin:3px;
+       padding-top: 25px;
+       padding-bottom: 25px;
+       padding-right: 34px;
+       padding-left: 34px;
+       border-radius: 12px;
+       font-weight: bold;
+       font-size: 20px;
+      }
+
+.res{ font-weight: bold;
+       font-size: 30px;
+     }
+
+     body{background-image: url(math1.jpg);}
+
+
+
+.jumbotron{background-color: rgba(255,249,196,0.9);
+      border: 10px solid #ff8f00;
+      padding-bottom: 100px;
+      box-shadow: 20px 20px 50px 15px grey;
+      
+      }
+
+.panel{border: 4px solid #795548;
+border-radius: 20px;
+box-shadow: 1px 1px 0px 20px #FFF59D;
+margin: 20px;}
+
+.form-control{text-align: right; 
+      border: 3px solid black; 
+      max-width: 375px;
+      border-radius: 12px;
+      height: 60px; 
+      margin-bottom: 40px; 
+      font-weight: bold; 
+      font-size: 30px;
+
+}
+
+
+.abt{background-color: rgba(255,249,196,0.9);
+      text-align: center;
+      border-radius: 12px;
+      font-family: 'Comfortaa', cursive;
+padding: 30px;}
+
+.sides{padding: 30px;
+      border: 20px solid #CDDC39;
+      border-radius: 12px;
+      margin-top: 11%;
+      margin-left: 34%;
+      margin-right: 34%;
+}
+
+a:link{color: #7CB342;font-family: 'Comfortaa', cursive;}
+a:visited{color: #7CB342;font-family: 'Comfortaa', cursive;}
+a:hover{color: #7CB342;
+      font-family: 'Comfortaa', cursive;}
+
+.tl{font-size: 35px;
+      font-family: 'Comfortaa', cursive;
+}
+
+.bld{font-weight: bold;
+font-size: 20px;}
+
+.norm{font-size: 20px;}

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="cssstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+    <!--javascript-->
+    <script type="text/javascript">
+      function showResults(){
+        var c=localStorage.length;
+      
+      if(c==0){}
+
+      else if(c==1){
+        document.getElementById("p1").innerHTML=localStorage.v1;
+      }
+
+      else if(c==2){
+        document.getElementById("p1").innerHTML=localStorage.v2;
+        document.getElementById("p2").innerHTML=localStorage.v1;
+      }
+
+      else if(c==3){
+        document.getElementById("p1").innerHTML=localStorage.v3;
+        document.getElementById("p2").innerHTML=localStorage.v2;
+        document.getElementById("p3").innerHTML=localStorage.v1;
+      }
+
+      else if(c==4){
+        document.getElementById("p1").innerHTML=localStorage.v4;
+        document.getElementById("p2").innerHTML=localStorage.v3;
+        document.getElementById("p3").innerHTML=localStorage.v2;
+        document.getElementById("p4").innerHTML=localStorage.v1;
+      }
+
+      else if(c==5){
+        document.getElementById("p1").innerHTML=localStorage.v5;
+        document.getElementById("p2").innerHTML=localStorage.v4;
+        document.getElementById("p3").innerHTML=localStorage.v3;
+        document.getElementById("p4").innerHTML=localStorage.v2;
+        document.getElementById("p5").innerHTML=localStorage.v1;
+      }
+
+      else if(c==6){
+        document.getElementById("p1").innerHTML=localStorage.v6;
+        document.getElementById("p2").innerHTML=localStorage.v5;
+        document.getElementById("p3").innerHTML=localStorage.v4;
+        document.getElementById("p4").innerHTML=localStorage.v3;
+        document.getElementById("p5").innerHTML=localStorage.v2;
+        document.getElementById("p6").innerHTML=localStorage.v1;
+      }
+
+      else if(c==7){
+        document.getElementById("p1").innerHTML=localStorage.v7;
+        document.getElementById("p2").innerHTML=localStorage.v6;
+        document.getElementById("p3").innerHTML=localStorage.v5;
+        document.getElementById("p4").innerHTML=localStorage.v4;
+        document.getElementById("p5").innerHTML=localStorage.v3;
+        document.getElementById("p6").innerHTML=localStorage.v2;
+        document.getElementById("p7").innerHTML=localStorage.v1;
+      }
+
+      else if(c==8){
+        document.getElementById("p1").innerHTML=localStorage.v8;
+        document.getElementById("p2").innerHTML=localStorage.v7;
+        document.getElementById("p3").innerHTML=localStorage.v6;
+        document.getElementById("p4").innerHTML=localStorage.v5;
+        document.getElementById("p5").innerHTML=localStorage.v4;
+        document.getElementById("p6").innerHTML=localStorage.v3;
+        document.getElementById("p7").innerHTML=localStorage.v2;
+        document.getElementById("p8").innerHTML=localStorage.v1;
+      }
+      }
+    </script>
+
+
+
+    <title>Calculator</title>
+  </head>
+
+
+
+  <body onload="showResults();">
+
+
+  	<!--Navigation Bar-->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid" style="margin-left: 5%; margin-right: 5%;">
+            <span class="navbar-nav navbar-text pull-left tl" style="color: #4CAF50;">Simple Calculator</span>
+  
+            <div class="collapse navbar-collapse navbar-nav navbar-text pull-right">
+              <ul>
+                <il class="navbar-nav navbar-text norm"><a href="index.html">Home</a></il>
+                <il class="navbar-nav navbar-text bld"><a href="#">Calculator</a></il>
+                <il class="navbar-nav navbar-text norm"><a href="about.html">About</a></il>
+              </ul>
+           </div>
+  
+        </div>
+      </nav>
+      
+
+
+
+    <!--calculator-->
+    <div class="container" style="padding-top: 4%">
+    	<div class="row">
+        <div class="col-md-6" style="padding: 50px">
+          <div class="panel panel-warning">
+            <div class="panel-body" style="background-color: #fcf8e3;">
+              <div class="container">
+                <br>
+                <form name="calc" style="margin-bottom: 16px">
+                  <div class="form-group" >
+                  <input name="display" placeholder="0" class="form-control">
+                  </div>
+                <br>
+                <div class="btn-group">
+                  <input type="button" class="btn tbl" value="0" onclick="document.calc.display.value +='0'"/>
+                  <input type="button" class="btn tbl" value="-" onclick="document.calc.display.value +='-'"/>
+                  <input type="button" class="btn tbl" value="+" onclick="document.calc.display.value +='+'"/>
+                  <input type="button" class="btn tbl" value="C" onclick="document.calc.display.value = ''"/>
+                </div>
+                <br>
+                <div class="btn-group">
+                  <input type="button" class="btn tbl" value="1" onclick="document.calc.display.value +='1'"/>
+                  <input type="button" class="btn tbl" value="2" onclick="document.calc.display.value +='2'"/>
+                  <input type="button" class="btn tbl" value="3" onclick="document.calc.display.value +='3'"/>
+                  <input type="button" class="btn tbl" value="x" onclick="document.calc.display.value +='*'"/>
+                </div>
+                <br>
+                <div class="btn-group">
+                  <input type="button" class="btn tbl" value="4" onclick="document.calc.display.value +='4'"/>
+                  <input type="button" class="btn tbl" value="5" onclick="document.calc.display.value +='5'"/>
+                  <input type="button" class="btn tbl" value="6" onclick="document.calc.display.value +='6'"/>
+                  <input type="button" class="btn tbl" value="/" style="padding-right: 39px;
+       padding-left: 52=px;" onclick="document.calc.display.value +='/'"/>
+                </div>
+                <br>
+                <div class="btn-group">
+                  <input type="button" class="btn tbl" value="7" onclick="document.calc.display.value +='7'"/>
+                  <input type="button" class="btn tbl" value="8" onclick="document.calc.display.value +='8'"/>
+                  <input type="button" class="btn tbl" value="9" onclick="document.calc.display.value +='9'"/>
+                  <input type="button" class="btn tbl" value="=" onclick="f1()"/>
+                </div>
+                   
+
+              </form>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         
+         <!--results-->
+         <div class="col-md-6" style="padding: 50px">
+          <div class="panel panel-warning">
+            <div class="panel-heading" style="text-align: center;">
+              <h1 style="font-family: 'Comfortaa', cursive">Results</h1>
+            </div>
+            <div class="panel-body">
+              <br>
+              <p class="res" id="p1"> </p>
+              <p class="res" id="p2"> </p>
+              <p class="res" id="p3"> </p>
+              <p class="res" id="p4"> </p>
+              <p class="res" id="p5"> </p>
+              <p class="res" id="p6"> </p>
+              <p class="res" id="p7"> </p>
+              <p class="res" id="p8" style="margin-bottom: 1px"> </p>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </div>
+
+
+
+    <!--Footer-->
+    <div class="navbar navbar-default navbar-fixed-bottom" style="position: absolute;">
+    	<div class="container-fluid">
+    		<div class="navbar-text pull-left">
+          <p>Designed by Ankur Nahar</p>
+        </div>
+        <div class="navbar-text pull-right">
+            <a href="index.html"><span class="glyphicon glyphicon-home" style="font-size:25px; margin-right: 20px;"></span></a>
+            <a href="about.html"><span class="glyphicon glyphicon-info-sign" style="font-size:25px; margin-right: 20px;"></span></a>
+        </div>
+    	</div>
+    </div>
+
+
+   <!--JavaScript-->
+  <script>
+    function f1()
+    { var data=document.calc.display.value +" = "+eval(document.calc.display.value);
+
+      var c=localStorage.length;
+      if(c<1){
+        localStorage.v1=data;
+        document.getElementById("p1").innerHTML=localStorage.v1;
+      }
+
+      else if(c<2){
+        localStorage.v2=data;
+        document.getElementById("p1").innerHTML=localStorage.v2;
+        document.getElementById("p2").innerHTML=localStorage.v1;
+      }
+
+      else if(c<3){
+        localStorage.v3=data;
+        document.getElementById("p1").innerHTML=localStorage.v3;
+        document.getElementById("p2").innerHTML=localStorage.v2;
+        document.getElementById("p3").innerHTML=localStorage.v1;
+      }
+
+      else if(c<4){
+        localStorage.v4=data;
+        document.getElementById("p1").innerHTML=localStorage.v4;
+        document.getElementById("p2").innerHTML=localStorage.v3;
+        document.getElementById("p3").innerHTML=localStorage.v2;
+        document.getElementById("p4").innerHTML=localStorage.v1;
+      }
+
+      else if(c<5){
+        localStorage.v5=data;
+        document.getElementById("p1").innerHTML=localStorage.v5;
+        document.getElementById("p2").innerHTML=localStorage.v4;
+        document.getElementById("p3").innerHTML=localStorage.v3;
+        document.getElementById("p4").innerHTML=localStorage.v2;
+        document.getElementById("p5").innerHTML=localStorage.v1;
+      }
+
+      else if(c<6){
+        localStorage.v6=data;
+        document.getElementById("p1").innerHTML=localStorage.v6;
+        document.getElementById("p2").innerHTML=localStorage.v5;
+        document.getElementById("p3").innerHTML=localStorage.v4;
+        document.getElementById("p4").innerHTML=localStorage.v3;
+        document.getElementById("p5").innerHTML=localStorage.v2;
+        document.getElementById("p6").innerHTML=localStorage.v1;
+      }
+
+      else if(c<7){
+        localStorage.v7=data;
+        document.getElementById("p1").innerHTML=localStorage.v7;
+        document.getElementById("p2").innerHTML=localStorage.v6;
+        document.getElementById("p3").innerHTML=localStorage.v5;
+        document.getElementById("p4").innerHTML=localStorage.v4;
+        document.getElementById("p5").innerHTML=localStorage.v3;
+        document.getElementById("p6").innerHTML=localStorage.v2;
+        document.getElementById("p7").innerHTML=localStorage.v1;
+      }
+
+      else if(c<8){
+        localStorage.v8=data;
+        document.getElementById("p1").innerHTML=localStorage.v8;
+        document.getElementById("p2").innerHTML=localStorage.v7;
+        document.getElementById("p3").innerHTML=localStorage.v6;
+        document.getElementById("p4").innerHTML=localStorage.v5;
+        document.getElementById("p5").innerHTML=localStorage.v4;
+        document.getElementById("p6").innerHTML=localStorage.v3;
+        document.getElementById("p7").innerHTML=localStorage.v2;
+        document.getElementById("p8").innerHTML=localStorage.v1;
+      }
+
+      else{
+        localStorage.v1=localStorage.v2
+        localStorage.v2=localStorage.v3
+        localStorage.v3=localStorage.v4
+        localStorage.v4=localStorage.v5
+        localStorage.v5=localStorage.v6
+        localStorage.v6=localStorage.v7
+        localStorage.v7=localStorage.v8
+        localStorage.v8=data;
+        document.getElementById("p1").innerHTML=localStorage.v8;
+        document.getElementById("p2").innerHTML=localStorage.v7;
+        document.getElementById("p3").innerHTML=localStorage.v6;
+        document.getElementById("p4").innerHTML=localStorage.v5;
+        document.getElementById("p5").innerHTML=localStorage.v4;
+        document.getElementById("p6").innerHTML=localStorage.v3;
+        document.getElementById("p7").innerHTML=localStorage.v2;
+        document.getElementById("p8").innerHTML=localStorage.v1;
+      }
+      document.calc.display.value = '';
+
+     
+
+
+  }
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="js/bootstrap/min.js"></script>
+  </body>
+</html>
+
+
+
